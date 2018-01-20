@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0sp"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingTop="0sp"
+    tools:context="com.leartgjoni.app.pathfindingsimulator.GridActivity">
+
+
+    <com.leartgjoni.app.pathfindingsimulator.GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grid"
+        android:layout_above="@+id/down"
+        android:layout_below="@+id/rezultate">
+    </com.leartgjoni.app.pathfindingsimulator.GridView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:paddingBottom="0sp"
+        android:gravity = "bottom"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:text="START"
+            android:id="@+id/start"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:text="STOP"
+            android:id="@+id/stop"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:text="DIJKSTRA"
+            android:id="@+id/dijkstra"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:text="A* (A star)"
+            android:id="@+id/astar"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/rezultate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

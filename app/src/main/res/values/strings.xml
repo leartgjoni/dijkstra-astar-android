@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PathFinding Simulator</string>
+    <string name="homeTitle">Select environment</string>
+    <string name="sparseButton">Sparse</string>
+    <string name="gridButton">Grid</string>
+
+    <string name="title_activity_grid">GridActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_sparse">SparseActivity</string>
+</resources>

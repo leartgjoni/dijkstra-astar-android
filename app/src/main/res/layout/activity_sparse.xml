@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0sp"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingTop="0sp"
+    tools:context="com.leartgjoni.app.pathfindingsimulator.SparseActivity">
+
+
+    <com.leartgjoni.app.pathfindingsimulator.SparseView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sparse"
+        android:layout_below="@+id/rezultate"
+        android:layout_above="@+id/dijkstra" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/start"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/stop" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:id="@+id/stop"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/vertex"
+        android:layout_toStartOf="@+id/vertex" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERTEX"
+        android:id="@+id/vertex"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDGE"
+        android:id="@+id/edge"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/vertex" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rezultate"
+        android:layout_below="@+id/start"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edge"
+        android:layout_alignEnd="@+id/edge"
+        android:backgroundTint="#d7f9eb" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dijkstra"
+        android:id="@+id/dijkstra"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/edge"
+        android:layout_toStartOf="@+id/edge" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A* (A Star)"
+        android:id="@+id/astar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/dijkstra"
+        android:layout_toEndOf="@+id/dijkstra" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/weightEdge"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/edge"
+        android:layout_toEndOf="@+id/edge" />
+
+</RelativeLayout>

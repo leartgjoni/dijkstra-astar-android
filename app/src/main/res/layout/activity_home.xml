@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#006699"
+    tools:context="com.leartgjoni.app.pathfindingsimulator.Home">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/homeTitle"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sparseButton"
+        android:id="@+id/sparseButton"
+        android:textSize="30sp"
+        android:layout_below="@+id/gridButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gridButton"
+        android:id="@+id/gridButton"
+        android:textSize="30sp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="42dp"
+        android:layout_alignRight="@+id/sparseButton"
+        android:layout_alignEnd="@+id/sparseButton"
+        android:layout_alignLeft="@+id/sparseButton"
+        android:layout_alignStart="@+id/sparseButton" />
+
+</RelativeLayout>
